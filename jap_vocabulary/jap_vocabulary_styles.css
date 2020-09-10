@@ -1,0 +1,14 @@
+
+body { background-image: url("../images/background_benkyou.jpg");
+background-repeat: no-repeat;
+background-position: top;
+background-size: auto;}
+
+.odnosnik a {
+    color: black;
+    background: plum;
+}
+.odnosnik { 
+    background: blue;
+    color:red;
+}
