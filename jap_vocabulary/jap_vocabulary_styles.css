@@ -7,8 +7,12 @@ background-size: auto;}
 .odnosnik a {
     color: black;
     background: rgb(204, 115, 204);
+    display: inline;
 }
 .odnosnik { 
     background: blue;
     color:red;
+}
+div {
+    background: plum;
 }
