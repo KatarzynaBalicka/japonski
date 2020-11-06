@@ -1,8 +1,9 @@
 
-body { background-image: url("../images/background_benkyou.jpg");
+body { //background-image: url("../images/background_benkyou.jpg"), url(../images/homonyms-hashi.png);
 background-repeat: no-repeat;
 background-position: top;
-background-size: auto;}
+background-size: auto;
+filter: grayscale(100%);}
 
 .odnosnik a {
     color: black;
@@ -15,4 +16,5 @@ background-size: auto;}
 }
 div {
     background: plum;
+    
 }

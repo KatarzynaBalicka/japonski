@@ -1,4 +1,44 @@
+
+
+body {
+    background: linear-gradient( #F4DBD8, #E0B1CB);
+    color: #2A0800;
+}
+    
+    
+    
 #sticky_nav {
-    background-color: yellow;
+    background-color: #C09891;
+    border-radius: 25px;
+    //overflow: visible;
+    //position: sticky;
+    top: 0px;
+    font-size: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.link {
+    color: #5D4E60;
+    text-decoration: none;
+}
+
+
+.teal {
+    background-color: #5D4E60;
     position: sticky;
+    top: 100px;
+}
+
+article {
+    border-radius: 23px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #C09891;
+    max-width: 1000px;
+    margin: 0 auto;
+    ;
 }
