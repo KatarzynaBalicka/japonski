@@ -6,4 +6,22 @@ body {
 
 .particles_bullet_point {
     list-style-type: none;
+    line-height: 32px;
+    border-bottom: 3px solid pink;
+    padding-bottom: none;
+    padding-top: 12px;
 }
+
+/* .particles_bullet_point_exeption { */
+    line-height: normal;
+}
+
+.particles_name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.particles-table {
+    line-height: 44px;
+}
+
