@@ -1,82 +1,58 @@
-
-
 body {
-    height: 100vh;
-    background: linear-gradient( #F4DBD8, #E0B1CB);
-    color: #2A0800;
+  height: 100vh;
+  background: linear-gradient(#f4dbd8, #e0b1cb);
+  color: #2a0800;
 }
-    
-    
-    
+
 #sticky_nav {
-    background-color: #C09891;
-    border-radius: 25px;
-    //overflow: visible;
-    //position: sticky;
-    top: 0px;
-    font-size: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-    
+  background-color: #c09891;
+  border-radius: 25px;
+  //overflow: visible;
+  //position: sticky;
+  top: 0px;
+  font-size: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .link {
-    color: #5D4E60;
-    text-decoration: none;
+  color: #5d4e60;
+  text-decoration: none;
 }
 .link:hover {
-    color: #7261A3;
+  color: #7261a3;
 }
 
 .glowna {
-    background: rgb(255, 255, 255, 0.25);
-    margin-top: 50px;
-    display: grid;
-    grid-template: repeat(3, 33%) / repeat (4, 25%);
-    grid-template-areas: 
+  background: rgb(255, 255, 255, 0.25);
+  margin-top: 50px;
+  display: grid;
+  grid-template: repeat(3, 33%) / repeat (4, 25%);
+  grid-template-areas:
     "header header header header"
     "updates updates . opis"
     "footer footer footer footer";
-    column-gap: 10px;
-    row-gap: 10px;
-
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .glowna__item {
-    background:rgb(238, 130, 238, 0.25);
+  background: rgb(238, 130, 238, 0.25);
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .updates {
-    grid-area: updates;
+  grid-area: updates;
 }
 
-.opis { 
-    grid-area: opis;
+.opis {
+  grid-area: opis;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
