@@ -1,8 +1,8 @@
 body {
   height: 100vh;
   background: linear-gradient(#f4dbd8, #e0b1cb);
+  background-attachment: fixed;
   color: #2a0800;
-}
 
 #sticky_nav {
   background-color: #c09891;

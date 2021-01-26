@@ -14,15 +14,19 @@ main {
   font-size: 18px;
   list-style-type: none;
   line-height: 32px;
+
   border-bottom: 4px solid;
   border-image-source: linear-gradient(
     60deg,
-    rgb(255, 255, 255, 1),
+    rgb(255, 192, 203, 0),
+    rgb(255, 255, 255, 1) 5%,
     rgb(255, 192, 203, 0) 55%
   );
   border-image-slice: 1;
   padding-bottom: none;
   padding-top: 12px;
+  border-radius: 12px;
+  margin-top: 70px;
 }
 
 .particles_bullet_point__example {
@@ -38,8 +42,8 @@ main {
 }
 
 .particles_box {
-  width: 75vw;
-  border: 5px solid red;
+  width: 100vw;
+  /* border: 5px solid red; */
   margin: 15px auto;
 }
 
@@ -49,7 +53,7 @@ main {
 
 /* .particles_box_ha {
   order: ;
-} */ */
+} */
 
 .particles_box_ga {
   order: 1;

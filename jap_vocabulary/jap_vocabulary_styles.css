@@ -1,1 +1,19 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#f4dbd8, #e0b1cb);
+    background-attachment: fixed;
+    color: #2a0800;
+}
 
+.funny_kanji_box {
+    width: 75vw;
+    margin: 15px auto;
+}
+
+.funny_kanji_main_kanji {
+    font-size: 36px;
+}
+
+.funny_kanji_translation {
+    font-size: 28px;
+}
