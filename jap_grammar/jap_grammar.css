@@ -3,12 +3,12 @@ body {
   background: linear-gradient(#f4dbd8, #e0b1cb);
   background-attachment: fixed;
   color: #2a0800;
-  }
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 .particles_bullet_point {
   font-size: 18px;
@@ -38,10 +38,51 @@ body {
 }
 
 .particles_box {
+  width: 75vw;
   border: 5px solid red;
-  margin: 1px;
+  margin: 15px auto;
 }
 
 .particles_box_he {
+  order: 7;
+}
+
+/* .particles_box_ha {
+  order: ;
+} */ */
+
+.particles_box_ga {
   order: 1;
+}
+
+.particles_box_wo {
+  order: 3;
+}
+
+.particles_box_to {
+  order: 9;
+}
+
+.particles_box_ni {
+  order: 6;
+}
+
+.particles_box_de {
+  order: 5;
+}
+
+.particles_box_no {
+  order: 4;
+}
+
+.particles_box_mo {
+  order: 10;
+}
+
+.particles_box_kara {
+  order: 11;
+}
+
+.particles_box_made {
+  order: 12;
 }
