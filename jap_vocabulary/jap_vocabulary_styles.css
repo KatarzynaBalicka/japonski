@@ -1,19 +1,58 @@
 body {
-    height: 100vh;
-    background: linear-gradient(#f4dbd8, #e0b1cb);
-    background-attachment: fixed;
-    color: #2a0800;
+  height: 100vh;
+  background: linear-gradient(#f4dbd8, #e0b1cb);
+  background-attachment: fixed;
+  color: #2a0800;
 }
 
 .funny_kanji_box {
-    width: 75vw;
-    margin: 15px auto;
+  width: 75vw;
+  margin: 15px auto;
 }
 
 .funny_kanji_main_kanji {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .funny_kanji_translation {
-    font-size: 28px;
+  font-size: 28px;
+}
+
+.similiar_looking_basic_row {
+  width: 100vw;
+  border: 4px solid red;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "translation_left hiragana_left hiragana_right translation_right"
+    "translation_left kanji_left kanji_right translation_right";
+}
+
+.translation_left {
+  grid-area: translation_left;
+}
+
+.hiragana_left {
+  grid-area: hiragana_left;
+}
+
+.hiragana_right {
+  grid-area: hiragana_right;
+}
+
+.translation_right {
+  grid-area: translation_right;
+}
+
+.kanji_left {
+  grid-area: kanji_left;
+}
+
+.kanji_right {
+  grid-area: kanji_right;
+}
+
+.boxy {
+  border: 4px solid pink;
 }
