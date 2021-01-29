@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#f4dbd8, #e0b1cb);
+    background-attachment: fixed;
+    color: #2a0800;
+    margin: 1px;
+  }
+
+  .parts_of_body_table {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  }
