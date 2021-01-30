@@ -77,16 +77,20 @@ body {
 
 /* VOCABULARY SORTED COLORS */
 
+.colors_whole_table {
+  display: flex;
+  flex-direction: column;
+}
+
 .colors_basic_row {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: [sample] 1fr [japanese] 2fr [polish] 2fr;
-  grid-template-areas: 
-  "sample hiragana translation"
-  "sample kanji translation";
+  grid-template-areas:
+    "sample hiragana translation"
+    "sample kanji translation";
+  justify-items: center;
 }
-
-
 
 .colors_sample {
   /* grid-row: 1 / 3;
@@ -119,14 +123,51 @@ body {
 }
 
 .sample_white {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
-    rgb(245, 245, 245, 0),
-    rgb(245, 245, 245, 0.75) 15%,
-    rgb(245, 245, 245, 0.75) 75%,
-    rgb(245, 245, 245, 0)
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75) 30%,
+    rgba(255, 255, 255, 0.75) 70%,
+    rgba(255, 255, 255, 0)
+  ); */
+  background-image: radial-gradient(
+    rgb(255, 255, 255, 1) 50%,
+    rgb(0, 0, 0, 0) 70%
   );
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  
 }
+.sample_black {
+  background: black;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.needed_space {
+  height: 1em;
+}
+
+.white_row {
+  order: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 450px) {
