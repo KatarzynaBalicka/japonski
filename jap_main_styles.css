@@ -3,6 +3,12 @@ body {
   background: linear-gradient(#f4dbd8, #e0b1cb);
   background-attachment: fixed;
   color: #2a0800;
+}
+
+main {
+  max-width: 75vw;
+  margin: auto;
+}
 
 #sticky_nav {
   background-color: #c09891;
