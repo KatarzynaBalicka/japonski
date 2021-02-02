@@ -1,19 +1,62 @@
 body {
   height: 100vh;
-  background: linear-gradient(#f4dbd8, #e0b1cb);
+  background: linear-gradient(rgb(244, 219, 216, 0.25), rgb(224, 177, 203, 0.25));
   background-attachment: fixed;
   color: #2a0800;
-  margin: 1px;
+  margin: auto;
+
 }
+ 
+main {
+  background-color: rgba(14, 121, 170, 0.5);
+  width: 75vw;
+  border: 4px solid red;
+  /* display: inline; */
+} 
 
 .main_title {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 55px;
   display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
+/* header {
+  min-height: 75px;
+  width: 100vw;
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0px;
+
+
+}
+nav {
+  padding: 15px;
+  display: none;
+}
+
+.navigation--open {
+  display:block;
+}
+
+.navigation_link {
+  display: block;
+  margin-bottom: 12px;
+} */
+
+ .hamburger {
+  height: 75px;
+}
+
+.hamburger_icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 0;
+  margin-left: auto;
+
+} 
 
 .colors_whole_table {
   display: flex;
@@ -42,12 +85,15 @@ body {
 }
 .colors_translation {
   grid-area: translation;
+  place-self: center;
 }
 .colors_hiragana {
   grid-area: hiragana;
+  align-self: end;
 }
 .colors_kanji {
   grid-area: kanji;
+  font-weight: bold;
 }
 
 .sample_white {
@@ -115,12 +161,10 @@ body {
 }
 
 .colors_sample_big {
-  display: none;
+  /* display: none;  */
 }
 
 @media screen and (min-width: 450px) {
-  
-
   .colors_basic_row {
     display: grid;
     grid-template-rows: auto;
@@ -148,7 +192,6 @@ body {
 }
 
 @media screen and (min-width: 1025px) {
-  
   .colors_basic_row {
     display: grid;
     grid-template-rows: auto;
@@ -157,7 +200,7 @@ body {
       "sample hiragana translation"
       "sample kanji translation";
     justify-items: center;
-    width: 75vw;
+    width: 35vw;
     margin: auto;
   }
 
@@ -168,7 +211,7 @@ body {
   }
 
   .colors_sample_big {
-    display: inline;
+  
     width: 15vw;
   }
 

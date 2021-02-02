@@ -1,40 +1,47 @@
 body {
-  height: 100vh;
-  background: linear-gradient(#f4dbd8, #e0b1cb);
+  background: linear-gradient(
+    rgb(244, 219, 216, 0.25),
+    rgb(224, 177, 203, 0.25)
+  );
   background-attachment: fixed;
-  color: #2a0800;
+  margin: 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  max-width: 75vw;
-  margin: auto;
+  height: 100vh;
+  color: #2a0800;
+  width: 95vw;
+  margin-top: 155px;
 }
 
-#sticky_nav {
-  background-color: #c09891;
-  border-radius: 25px;
-  //overflow: visible;
-  //position: sticky;
-  top: 0px;
-  font-size: 100px;
+.navigation_top {
+  background-color: rgb(192, 152, 145, 1);
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  position: fixed;
+  top: 15px;
+  border-radius: 25px;
 }
 
-.link {
+.navigation_link {
   color: #5d4e60;
   text-decoration: none;
+  font-size: 24px;
 }
-.link:hover {
+.navigation_link:hover {
   color: #7261a3;
 }
 
-.glowna {
+/* .glowna {
   background: rgb(255, 255, 255, 0.25);
   margin-top: 50px;
   display: grid;
-  grid-template: repeat(3, 33%) / repeat (4, 25%);
+  grid-template: repeat(3, 33vw) / repeat (4, 25vw);
   grid-template-areas:
     "header header header header"
     "updates updates . opis"
@@ -62,3 +69,15 @@ main {
 .footer {
   grid-area: footer;
 }
+
+
+@media screen and (min-width: 450px) {
+
+
+}
+
+
+
+@media screen and (min-width: 1025px) {
+
+} */
