@@ -15,6 +15,8 @@ main {
   color: #2a0800;
   width: 95vw;
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation_top {
@@ -33,7 +35,6 @@ main {
   font-size: 24px;
   display: block;
   margin-left: 30px;
-
 }
 .navigation_link:hover {
   color: #7261a3;
@@ -54,6 +55,54 @@ button {
 .hamburger_icon {
   height: 50px;
   width: 50px;
+}
+
+.vocabulary_main_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vocabulary_main_title_hiragana {
+  font-size: 16px;
+  padding: 5px 0px 0px;
+}
+
+.vocabulary_main_title_kanji {
+  font-size: 34px;
+  padding: 0px 0px 10px;
+}
+
+dl {
+  margin: 30px 20px;
+}
+
+.topic_link {
+  color: rgb(92, 93, 184);
+  text-decoration: none;
+}
+
+dt {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.vocabulary_folder_topic_kanji {
+  padding: 0px 0px 20px;
+}
+
+.vocabulary_folder_topic_hiragana {
+  font-size: 12px;
+  padding: 5px 0px 0px;
+}
+
+dd {
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @media screen and (min-width: 450px) {
@@ -84,39 +133,6 @@ button {
     display: none;
   }
 
-  /* .glowna {
-      background: rgb(255, 255, 255, 0.25);
-      margin-top: 50px;
-      display: grid;
-      grid-template: repeat(3, 33vw) / repeat (4, 25vw);
-      grid-template-areas:
-        "header header header header"
-        "updates updates . opis"
-        "footer footer footer footer";
-      column-gap: 10px;
-      row-gap: 10px;
-    }
-  
-    .glowna__item {
-      background: rgb(238, 130, 238, 0.25);
-    }
-  
-    .header {
-      grid-area: header;
-    }
-  
-    .updates {
-      grid-area: updates;
-    }
-  
-    .opis {
-      grid-area: opis;
-    }
-  
-    .footer {
-      grid-area: footer;
-    }
-   */
   main {
     height: 100%;
     color: #2a0800;
@@ -125,5 +141,24 @@ button {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(62, 25, 41, 0.25);
+    font-size: 16px;
   }
+
+  dl {
+    margin: 30px 30px;
+  }
+
+  dd {
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  main{
+    font-size: 21px;
+  }
+
 }
