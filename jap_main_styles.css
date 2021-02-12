@@ -146,3 +146,14 @@ button {
 @media screen and (min-width: 1025px) {
 
 } */
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw;
+    font-size: 21px;
+  }
+
+  .navigation_top {
+    width: 50vw;
+  }
+}

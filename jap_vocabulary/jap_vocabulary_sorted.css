@@ -96,7 +96,7 @@ li {
 
 ul {
   margin: 0px 30px;
-padding-inline-start: 0px;
+  padding-inline-start: 0px;
   line-height: 1.5;
 }
 
@@ -117,10 +117,7 @@ padding-inline-start: 0px;
   }
 
   .navigation_link {
-    color: #5d4e60;
-    text-decoration: none;
     font-size: 28px;
-    display: block;
     margin: auto;
   }
 
@@ -157,5 +154,16 @@ padding-inline-start: 0px;
 
   .vocabulary_sorted_link--right {
     grid-area: right;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw;
+    font-size: 21px;
+  }
+
+  .navigation_top {
+    width: 50vw;
   }
 }

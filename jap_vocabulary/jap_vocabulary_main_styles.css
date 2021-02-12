@@ -118,8 +118,6 @@ dd {
     border-radius: 25px;
     padding: 5px 0px;
     box-shadow: 0 0 5px rgb(62, 25, 41, 0.5);
-    
-    
   }
 
   .navigation_link {
@@ -143,7 +141,6 @@ dd {
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(62, 25, 41, 0.25);
     font-size: 16px;
-  
   }
 
   dl {
@@ -160,5 +157,16 @@ dd {
 @media screen and (min-width: 800px) {
   main {
     font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw;
+    font-size: 21px;
+  }
+
+  .navigation_top {
+    width: 50vw;
   }
 }
