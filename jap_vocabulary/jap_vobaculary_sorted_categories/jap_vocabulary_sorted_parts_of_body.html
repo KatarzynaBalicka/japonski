@@ -5,77 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Japonski</title>
     <link
-      href="../jap_vocabulary_sorted_parts_of_body.css"
+      href="../jap_vobaculary_sorted_categories/jap_vocabulary_sorted_parts_of_body.css"
       rel="stylesheet"
       type="text/css"
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="../jap_grammar/jap_grammar_main.html">Gramatyka</a>
-        <a href="../jap_exercise/jap_exercise_main.html">Cwiczenia</a>
-        <a href="../jap_vocabulary/jap_vocabulary_main.html">Slownictwo</a>
-        <br /><br /><br />
-        <a href="../jap_main.html">Powrót do Głownej</a>
-      </nav>
-    </header>
+    <!-- CAŁA NAWIGACJA -->
+    <nav class="navigation_top navigation_top--js">
+      <a href="../../jap_grammar/jap_grammar_main.html" class="navigation_link"
+        >Gramatyka</a
+      >
+      <a
+        href="../../jap_exercise/jap_exercise_main.html"
+        class="navigation_link"
+        >Ćwiczenia</a
+      >
+      <a
+        href="../../jap_vocabulary/jap_vocabulary_main.html"
+        class="navigation_link"
+        >Słownictwo</a
+      >
+
+      <a href="../../jap_main.html" class="navigation_link"
+        >Powrót do Głownej</a
+      >
+    </nav>
+
+    <button class="hamburger hamburger--js">
+      <img src="../../images/hamburger.png" class="hamburger_icon" />
+    </button>
+    <!-- CAŁA NAWIGACJA -->
 
     <main>
-      <div calss="main_title">
-        からだ　の　ぶぶん　体の部分 <br />Części ciała
+      <div class="vocabulary_sorted_title">
+        <div class="vocabulary_sorted_title_topic">Części ciała</div>
+        <div class="vocabulary_sorted_title_hiragana">からだ の ぶぶん</div>
+        <div class="vocabulary_sorted_title_kanji">体の部分</div>
       </div>
-
-      <!-- TEMPLATE ROW -->
-
-      <!-- <div class="similiar_looking_basic_row">
-        <div class="similiar_looking_translation_left translation boxy">
-          Prawy
-        </div>
-
-        <div class="similiar_looking_hiragana_left hiragana boxy">
-          みぎ
-        </div>
-        　
-        <div class="similiar_looking_kanji_left kanji boxy">右</div>
-        　
-        <div class="similiar_looking_kanji_right kanji boxy">石</div>
-        　
-        <div class="similiar_looking_hiragana_right hiragana boxy">
-          いし
-        </div>
-        　
-        <div class="similiar_looking_translation_right translation boxy">
-          Kamień
-        </div>
-      </div> -->
 
       <div class="parts_of_body_basic_row">
-        <div class="similiar_looking_translation_left translation boxy">
-          głowa
-        </div>
-
-        <div class="similiar_looking_hiragana_left hiragana boxy">
-        あたま
-        </div>
-        　
-        <div class="similiar_looking_kanji_left kanji boxy">頭</div>
-        　
-        <div class="similiar_looking_kanji_right kanji boxy">首</div>
-        　
-        <div class="similiar_looking_hiragana_right hiragana boxy">
-          くび
-        </div>
-        　
-        <div class="similiar_looking_translation_right translation boxy">
-          szyja
-        </div>
+        <div class="parts_of_body_translation">głowa</div>
+        <div class="parts_of_body_hiragana">あたま</div>
+        <div class="parts_of_body_kanji">頭</div>
       </div>
 
-  
+      <div class="parts_of_body_basic_row">
+        <div class="parts_of_body_translation">twarz</div>
+        <div class="parts_of_body_hiragana">かお</div>
+        <div class="parts_of_body_kanji">顔</div>
+      </div>
 
-        
+      <div class="parts_of_body_basic_row">
+        <div class="parts_of_body_translation">szyja</div>
+        <div class="parts_of_body_hiragana">くび</div>
+        <div class="parts_of_body_kanji">首</div>
+      </div>
+
+      <div class="parts_of_body_basic_row">
+        <div class="parts_of_body_translation">oko/oczy</div>
+        <div class="parts_of_body_hiragana">め</div>
+        <div class="parts_of_body_kanji">目</div>
+      </div>
+
+      <div class="parts_of_body_basic_row">
+        <div class="parts_of_body_translation">ucho/uszy</div>
+        <div class="parts_of_body_hiragana">みみ</div>
+        <div class="parts_of_body_kanji">耳</div>
       </div>
     </main>
+
+    <script src="../../jap_main.js"></script>
   </body>
 </html>

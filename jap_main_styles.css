@@ -142,10 +142,11 @@ button {
   }
 }
 
-/*
-@media screen and (min-width: 1025px) {
-
-} */
+@media screen and (min-width: 800px) {
+  main {
+    font-size: 21px;
+  }
+}
 
 @media screen and (min-width: 1439px) {
   main {
