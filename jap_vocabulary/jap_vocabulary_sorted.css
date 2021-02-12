@@ -88,7 +88,7 @@ li {
   border-image-source: linear-gradient(
     60deg,
     rgb(255, 192, 203, 0),
-    rgb(219, 146, 198) 5%,
+    rgb(233, 185, 213) 5%,
     rgb(255, 192, 203, 0) 55%
   );
   border-image-slice: 1;

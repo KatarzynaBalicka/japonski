@@ -14,7 +14,6 @@ main {
   color: #2a0800;
   width: 95vw;
   margin-top: 100px;
-  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
 }
@@ -92,7 +91,6 @@ button {
     "sample kanji translation";
   justify-items: center;
 }
-
 
 .colors_sample {
   grid-area: sample;
@@ -258,7 +256,7 @@ button {
     column-gap: 15px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1023px) {
   .colors_basic_row {
     display: grid;
     grid-template-rows: auto;
@@ -267,14 +265,8 @@ button {
       "sample hiragana translation"
       "sample kanji translation";
     justify-items: center;
-    width: 35vw;
+    width: 90%;
     margin: auto;
-  }
-
-  .colors_media_width_1023 {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
   }
 
   .colors_sample_big {
@@ -283,8 +275,8 @@ button {
 
   .colors_sample {
     grid-area: sample;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50px;
     justify-self: end;
   }
@@ -312,8 +304,6 @@ button {
     width: 50vw;
   }
 
-  
-
   .colors_basic_row {
     display: grid;
     grid-template-rows: auto;
@@ -322,7 +312,7 @@ button {
       "sample hiragana translation"
       "sample kanji translation";
     justify-items: center;
-    width: 85%;
+    width: 75%;
     margin: 0px auto;
   }
 
