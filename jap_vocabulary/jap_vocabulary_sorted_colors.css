@@ -191,7 +191,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1023px) {
   .colors_basic_row {
     display: grid;
     grid-template-rows: auto;

@@ -76,10 +76,18 @@ button {
   padding: 0px 0px 10px;
 }
 
+.learning_tip {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px auto;
+  text-align: justify;
+  text-justify: inter-word ;
+}
+
 .parts_of_body_whole_table {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 10px;
+  justify-content: space-evenly;
 }
 
 .parts_of_body_basic_row {
@@ -98,6 +106,7 @@ button {
     rgb(255, 192, 203, 0) 75%
   );
   border-image-slice: 1;
+  padding: 0px 10px;
   margin-bottom: 40px;
 }
 
@@ -110,7 +119,7 @@ button {
 
 .parts_of_body_hiragana {
   grid-area: hiragana;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .parts_of_body_kanji {
@@ -153,5 +162,44 @@ button {
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(62, 25, 41, 0.25);
     font-size: 16px;
+  }
+
+  .parts_of_body_basic_row {
+    grid-template-columns: 100px 100px;
+    padding: 0px 10px;
+  }
+
+}
+
+
+@media screen and (min-width: 799px) {
+  main {
+    font-size: 21px;
+  }
+
+  .parts_of_body_translation {
+    font-size: 21px;
+  }
+
+  .parts_of_body_hiragana {
+    font-size: 14px;
+  }
+
+  .parts_of_body_kanji {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+}
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw;
+    font-size: 21px;
+  }
+
+  .navigation_top {
+    width: 50vw;
   }
 }
