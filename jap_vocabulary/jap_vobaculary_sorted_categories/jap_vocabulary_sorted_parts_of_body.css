@@ -57,6 +57,11 @@ button {
   width: 50px;
 }
 
+.parts_of_body_annotation {
+  color: #5d4e60;
+  text-decoration: none;
+}
+
 .vocabulary_sorted_title {
   font-size: 32px;
   font-weight: bold;
