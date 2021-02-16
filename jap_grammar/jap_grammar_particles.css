@@ -11,7 +11,7 @@ body {
 
 main {
   height: 100vh;
-  color: #2a0800;
+  color: rgb(42, 8, 0);
   width: 95vw;
   margin-top: 120px;
   padding-bottom: 25px;
@@ -76,39 +76,39 @@ button {
   padding: 0px 0px 10px;
 }
 
+.particles_box {
+  width: 100%;
+  margin: 15px auto;
+}
+
+.particles_name {
+  font-size: 44px;
+  font-weight: bold;
+}
+
 .particles_bullet_point {
   font-size: 18px;
   list-style-type: none;
   line-height: 32px;
-
   border-bottom: 4px solid;
   border-image-source: linear-gradient(
     60deg,
     rgb(255, 192, 203, 0),
-    rgb(255, 255, 255, 1) 5%,
+    rgb(42, 8, 0, 1) 5%,
     rgb(255, 192, 203, 0) 55%
   );
   border-image-slice: 1;
   padding-bottom: none;
-  padding-top: 12px;
+  margin-bottom: 15px;
+  margin-left: -40px;
+  text-align: justify;
+  /* border: 5px solid hotpink; */
 }
 
 .particles_bullet_point__example {
   padding-left: 25px;
   margin: 1px;
   /* border: 5px dotted pink; */
-}
-
-.particles_name {
-  font-size: 44px;
-  font-weight: bold;
-  border: 5px dotted yellow;
-}
-
-.particles_box {
-  width: 100vw;
-  /* border: 5px solid red; */
-  margin: 15px auto;
 }
 
 .particles_box_he {
@@ -155,7 +155,7 @@ button {
   order: 12;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 449px) {
   .navigation_top {
     background-color: rgb(192, 152, 145, 1);
     width: 75vw;
@@ -190,10 +190,28 @@ button {
     box-shadow: 0 0 25px rgb(62, 25, 41, 0.25);
     font-size: 16px;
   }
+
+  .particles_box {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .particles_bullet_point {
+    border-image-source: linear-gradient(
+      60deg,
+      rgb(255, 192, 203, 0),
+      rgb(233, 185, 213) 5%,
+      rgb(255, 192, 203, 0) 55%
+    );
+  }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 799px) {
   main {
+    font-size: 21px;
+  }
+
+  .particles_bullet_point {
     font-size: 21px;
   }
 }

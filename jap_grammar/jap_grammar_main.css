@@ -75,11 +75,18 @@ button {
   font-size: 34px;
   padding: 0px 0px 10px;
 }
+ul {
+  list-style-type: none;
+}
 
-.vocabulary_sorted_link {
-  font-size: 18px;
-  text-decoration: none;
+li {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.grammar_main_link {
   color: rgb(92, 93, 184);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 450px) {
