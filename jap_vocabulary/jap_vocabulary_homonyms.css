@@ -76,6 +76,69 @@ button {
   padding: 0px 0px 10px;
 }
 
+.homonyms_basic_row {
+  background: linear-gradient(
+    90deg,
+    rgb(245, 245, 245, 0),
+    rgb(255, 255, 255, 1) 15%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 0)
+  );
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-areas:
+    "translation_left hiragana_left hiragana_right translation_right"
+    "translation_left kanji_left kanji_right translation_right";
+}
+
+.homonyms_translation_left {
+  grid-area: translation_left;
+  justify-self: start;
+  align-self: center;
+}
+
+.homonyms_hiragana_left {
+  grid-area: hiragana_left;
+}
+
+.homonyms_kanji_left {
+  grid-area: kanji_left;
+}
+
+.homonyms_translation_right {
+  grid-area: translation_right;
+  justify-self: end;
+  align-self: center;
+}
+
+.homonyms_hiragana_right {
+  grid-area: hiragana_right;
+}
+
+.homonyms_kanji_right {
+  grid-area: kanji_right;
+}
+
+.kanji {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  justify-items: center;
+  align-self: start;
+}
+
+.hiragana {
+  font-size: 14px;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.needed_space {
+  height: 2em;
+}
+
 @media screen and (min-width: 450px) {
   .navigation_top {
     background-color: rgb(192, 152, 145, 1);
