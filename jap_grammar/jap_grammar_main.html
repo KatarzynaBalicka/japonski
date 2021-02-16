@@ -4,28 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gramatyka</title>
-    <link href="../jap_grammar/jap_grammar.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../jap_grammar/jap_grammar_main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="../jap_grammar/jap_grammar_main.html">Gramatyka</a>
-        <a href="../jap_exercise/jap_exercise_main.html">Cwiczenia</a>
-        <a href="../jap_vocabulary/jap_vocabulary_main.html">Slownictwo</a>
-        <br /><br /><br />
-        <a href="../jap_main.html">Powrót do Głownej</a>
+      <nav class="navigation_top navigation_top--js">
+        <a class="navigation_link" href="../jap_grammar/jap_grammar_main.html"
+          >Gramatyka</a
+        >
+        <a class="navigation_link" href="../jap_exercise/jap_exercise_main.html"
+          >Ćwiczenia</a
+        >
+        <a
+          class="navigation_link"
+          href="../jap_vocabulary/jap_vocabulary_main.html"
+          >Słownictwo</a
+        >
+        <a class="navigation_link" href="../jap_main.html">Powrót do Głównej</a>
       </nav>
+      <button type="button" class="hamburger hamburger--js">
+        <img
+          src="../images/hamburger.png"
+          class="hamburger_icon"
+          alt="Hamburger_Menu_Icon"
+        />
+      </button>
     </header>
     <main>
-      <h1>Gramatyka</h1>
+      <div class="grammar_title">
+        <div class="grammar_title_topic">Gramatyka</div>
+        <div class="grammar_title_hiragana">ぶんぽう</div>
+        <div class="grammar_title_kanji">文法</div>
+      </div>
 
-      Na tej stronie znajdziecie mniej lub bardziej posortowane tematy, które przybliżą Wam składnię języka.
-      <br>Zapraszamy.
+      Na tej stronie znajdziecie mniej lub bardziej posortowane tematy, które
+      przybliżą Wam składnię języka.
+      <br />Zapraszamy.
 
       <ul>
         <h1>Tematy</h1>
         <li><a href="jap_grammar_particles.html">Partykuły</a></li>
       </ul>
     </main>
+    <script src="../jap_main.js"></script>
   </body>
 </html>

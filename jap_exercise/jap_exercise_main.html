@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ćwiczenia</title>
+    <link href="jap_exercise_main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="../jap_grammar/jap_grammar_main.html">Gramatyka</a>
-            <a href="../jap_exercise/jap_exercise_main.html">Cwiczenia</a>
-            <a href="../jap_vocabulary/jap_vocabulary_main.html">Slownictwo</a>
-            <br /><br /><br />
-            <a href="../jap_main.html">Powrót do Głownej</a>
-          </nav>
+      <nav class="navigation_top navigation_top--js">
+        <a class="navigation_link" href="../jap_grammar/jap_grammar_main.html"
+          >Gramatyka</a
+        >
+        <a class="navigation_link" href="../jap_exercise/jap_exercise_main.html"
+          >Ćwiczenia</a
+        >
+        <a
+          class="navigation_link"
+          href="../jap_vocabulary/jap_vocabulary_main.html"
+          >Słownictwo</a
+        >
+        <a class="navigation_link" href="../jap_main.html">Powrót do Głównej</a>
+      </nav>
+      <button type="button" class="hamburger hamburger--js">
+        <img
+          src="../images/hamburger.png"
+          class="hamburger_icon"
+          alt="Hamburger_Menu_Icon"
+        />
+      </button>
     </header>
-    <main>cwiczenia
-<br>
-
-
-
+    <main>
+      <div class="exercise_title">
+        <div class="exercise_title_topic">Ćwiczenia</div>
+        <div class="exercise_title_hiragana">れんしゅう</div>
+        <div class="exercise_title_kanji">練習</div>
+      </div>
+      <br />
     </main>
-</body>
+    <script src="../jap_main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,137 @@
+body {
+  background: linear-gradient(
+    rgb(244, 219, 216, 0.25),
+    rgb(224, 177, 203, 0.25)
+  );
+  background-attachment: fixed;
+  margin: 2px 2px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+  color: #2a0800;
+  width: 95vw;
+  margin-top: 120px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation_top {
+  background-color: rgb(206, 178, 173);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 5px 0px;
+  display: none;
+}
+
+.navigation_link {
+  color: #5d4e60;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  margin-left: 30px;
+}
+.navigation_link:hover {
+  color: #7261a3;
+}
+
+.navigation--open {
+  display: block;
+}
+
+button {
+  position: fixed;
+  top: 23px;
+  right: 15px;
+  background-color: rgb(190, 168, 167, 0.75);
+  border: transparent;
+  border-radius: 15px;
+}
+.hamburger_icon {
+  height: 50px;
+  width: 50px;
+}
+
+.grammar_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grammar_title_hiragana {
+  font-size: 16px;
+  padding: 5px 0px 0px;
+}
+
+.grammar_title_kanji {
+  font-size: 34px;
+  padding: 0px 0px 10px;
+}
+
+.vocabulary_sorted_link {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(92, 93, 184);
+}
+
+@media screen and (min-width: 450px) {
+  .navigation_top {
+    background-color: rgb(192, 152, 145, 1);
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 15px;
+    left: auto;
+    margin: 0px auto;
+    border-radius: 25px;
+    padding: 5px 0px;
+    box-shadow: 0 0 5px rgb(62, 25, 41, 0.5);
+  }
+
+  .navigation_link {
+    font-size: 28px;
+    margin: auto;
+  }
+
+  button {
+    display: none;
+  }
+
+  main {
+    height: 100%;
+    color: #2a0800;
+    width: 75vw;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(62, 25, 41, 0.25);
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw;
+    font-size: 21px;
+  }
+
+  .navigation_top {
+    width: 50vw;
+  }
+}
