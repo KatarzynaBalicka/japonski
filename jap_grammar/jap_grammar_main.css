@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  width: 100vw;
   color: #2a0800;
   width: 95vw;
   margin-top: 120px;
@@ -75,21 +75,22 @@ button {
   font-size: 34px;
   padding: 0px 0px 10px;
 }
-ul {
-  list-style-type: none;
-}
 
-li {
-  font-size: 24px;
-  font-weight: bold;
+.grammar_topics {
+  display: flex;
+  flex-direction: column;
 }
 
 .grammar_main_link {
   color: rgb(92, 93, 184);
   text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 449px) {
   .navigation_top {
     background-color: rgb(192, 152, 145, 1);
     width: 75vw;
@@ -126,9 +127,19 @@ li {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 799px) {
   main {
     font-size: 21px;
+  }
+
+  .grammar_topics {
+    margin: 5px auto;
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .grammar_main_link {
+    width: 250px;
   }
 }
 
