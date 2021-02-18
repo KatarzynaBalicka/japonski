@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Śmieszne kanji おもしろい　かんじ　面白い感じ</title>
     <link
-      href="../jap_vocabulary/jap_vocabulary_styles.css"
+      href="../jap_vocabulary/jap_vocabulary_funny_kanji.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -13,23 +13,30 @@
 
   <body>
     <nav class="navigation_top navigation_top--js">
-      <a
-        class="navigation_link"
-        href="../japonski/jap_grammar/jap_grammar_main.html"
+      <a class="navigation_link" href="../jap_grammar/jap_grammar_main.html"
         >Gramatyka</a
       >
-      <a class="navigation_link" href="jap_exercise/jap_exercise_main.html"
+      <a class="navigation_link" href="../jap_exercise/jap_exercise_main.html"
         >Ćwiczenia</a
       >
-      <a class="navigation_link" href="jap_vocabulary/jap_vocabulary_main.html"
+      <a
+        class="navigation_link"
+        href="../jap_vocabulary/jap_vocabulary_main.html"
         >Słownictwo</a
       >
     </nav>
     <button type="button" class="hamburger hamburger--js">
-      <img src="images/hamburger.png" class="hamburger_icon" />
+      <img src="../images/hamburger.png" class="hamburger_icon" />
     </button>
     <main>
-      Śmieszne kanji <br />おもしろい　かんじ　面白い感じ NA TEJ STRONIE BĘDĄ
+
+      <main>
+        <div class="funny_kanji_title">
+          <div class="funny_kanji_title_topic">Śmieszne kanji</div>
+          <div class="funny_kanji_title_hiragana">おもしろい かんじ</div>
+          <div class="funny_kanji_title_kanji">面白い漢字</div>
+        </div>
+      NA TEJ STRONIE BĘDĄ
       ZNAJDOWAĆ SIĘ KANJI, KTÓRE MOŻEMY W ZABAWNY SPOSÓB SPRÓBOWAĆ ZAPAMIETAĆ
 
       <div class="funny_kanji_box">
@@ -51,7 +58,7 @@
       <div class="funny_kanji_box">
         <dt class="funny_kanji_main_kanji">身長・しんちょう</dt>
         <dd class="funny_kanji_translation">WZROST</dd>
-        <dd>dlugie ciało nagai jako długi </dd>
+        <dd>dlugie ciało nagai jako długi</dd>
       </div>
 
       <div class="funny_kanji_box">
@@ -60,6 +67,22 @@
         <dd>ciało i ciężki</dd>
       </div>
 
+      <div class="funny_kanji_box">
+        <dt class="funny_kanji_main_kanji">身体・しんたい</dt>
+        <dd class="funny_kanji_translation">ciało</dd>
+        <dd>obydwa znaki to ciało</dd>
+      </div>
+
+      <div class="funny_kanji_box">
+        <dt class="funny_kanji_main_kanji">恥ずかしい・はずかしい</dt>
+        <dd class="funny_kanji_translation">
+          ZAKŁOPOTANY/ZAWSTYDZONY/NIEŚMIAŁY
+        </dd>
+        <dd>
+          kiedy jesteśmy zawstydzeni robimy się czerwoni po uszy (耳) jak nasze
+          serce (心).
+        </dd>
+      </div>
 
       <!-- TEMPLATE FUNNY KANJI BOX
 
@@ -71,12 +94,75 @@
 
       TEMPLATE FUNNY KANJI BOX -->
 
-
-
       <!-- <div class="future">
             <h1 class="title">Let me tell you about future</h1>
             <div class="explanation">wpisać plik o "来る i pochodnych"</div>
         </div> -->
+
+      <div class="funny_kanji_propositions_form">
+        <form>
+          <fieldset>
+            <legend>Dane</legend>
+
+            <label>Imię<input name="name" /></label>
+            <label
+              >E-mail<input
+                name="e-mail"
+                type="emial"
+                placeholder="user@domain.com"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Proponowany znak</legend>
+            <label>Po polsku<input name="polish" /></label>
+            <label
+              >Po japońsku<input
+                name="japanese"
+                placeholder="kanji / hiragana / romanji"
+            /></label>
+
+            <!-- RADIO LISTA CZEŚCI MOWY
+
+          <label>Część mowy<input name="part_of_speech" /></label>
+          <label
+            ><input
+              name="part_of_speech_example"
+              type="radio"
+              value="noun"
+            />Rzeczownik</label
+          >
+
+          <label
+            ><input
+              name="part_of_speech_example"
+              type="radio"
+              value="verb"
+            />Czasownik</label
+          >
+          RADIO LISTA CZEŚCI MOWY -->
+
+            <label for="part_of_speech">Część mowy</label>
+            <select name="part_of_speech">
+              <option>(wybierz)</option>
+              <option>Rzeczownik</option>
+              <option>Czasownik</option>
+              <option>Przymiotnik</option>
+              <option>Przysłówek</option>
+              <option>Liczebnik</option>
+              <option>Zaimek</option>
+              <option>Przyimek</option>
+            </select>
+
+            <label
+              >Opis<textarea
+                name="description"
+                placeholder="Tutaj wpisz swoją propozycję"
+              ></textarea>
+            </label>
+          </fieldset>
+        </form>
+      </div>
     </main>
+    <script src="../jap_main.js"></script>
   </body>
 </html>
