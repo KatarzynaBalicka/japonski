@@ -205,6 +205,7 @@ button {
 @media screen and (min-width: 799px) {
   main {
     font-size: 21px;
+    margin-bottom: 40px;
   }
 
   .parts_of_body_translation {
