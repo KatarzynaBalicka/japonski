@@ -141,6 +141,17 @@ button {
   .grammar_main_link {
     width: 250px;
   }
+
+  [data-tooltip] {
+    position: relative;
+  }
+
+  [data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 25px;
+  }
+
 }
 
 @media screen and (min-width: 1439px) {

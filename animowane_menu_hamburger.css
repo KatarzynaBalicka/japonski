@@ -52,6 +52,11 @@
   transition: all 0.5s ease-in-out;
 }
 
+JEŚLI MAMY DWIE KLASY ZAPISANE PO SOBIE BEZ SPACJI, OZNACZA TO, ŻE OBIEKT MUSI MIEĆ TE DWIE KLASY
+
+JEŚLI MAMY DWIE KLASY ZAPISANE PO SOBIE ZE SPACJĄ, OZNACZA TO, ŻE W PIERWSZYM ELEMENCIE NALEŻY SZUKAĆ DRUGIEGO
+
+
 .menu-ham.open .menu-button::before {
   transform: rotate(45deg) translate(35px, -35px);
 }

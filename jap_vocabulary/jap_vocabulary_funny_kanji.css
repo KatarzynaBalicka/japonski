@@ -78,10 +78,17 @@ button {
 
 .explanation_tip,
 .funny_kanji_translation {
-    margin-left: 20px;
-    line-height: 1.7;
+  margin-left: 20px;
+  line-height: 1.7;
 }
 
+.link_to_form {
+  display: inline-block;
+}
+
+#funny_form {
+  display: inline-block;
+}
 
 @media screen and (min-width: 449px) {
   .navigation_top {
@@ -132,8 +139,6 @@ button {
   main {
     font-size: 21px;
   }
-
- 
 }
 
 @media screen and (min-width: 1439px) {

@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   background: linear-gradient(
     rgb(244, 219, 216, 0.25),
@@ -76,6 +81,7 @@ button {
   padding: 0px 0px 10px;
 }
 
+
 .particles_box {
   width: 100%;
   margin: 15px auto;
@@ -119,6 +125,15 @@ button {
   order: ;
 } */
 
+.particles_name::after {
+  content: "Im new here";
+  background: green;
+  /* position: absolute; */
+  display: block;
+  /* transform: translateX(-125px); */
+  left: -50px;
+}
+
 .particles_box_ga {
   order: 1;
 }
@@ -153,6 +168,10 @@ button {
 
 .particles_box_made {
   order: 12;
+}
+
+.particles_annotation {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 449px) {

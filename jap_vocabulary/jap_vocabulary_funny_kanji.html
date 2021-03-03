@@ -36,21 +36,42 @@
         <div class="funny_kanji_title_kanji">面白い漢字</div>
       </div>
       <div class="page_description">
-        Poniżej staraliśmy się rozbić na części, tak był 
+        Poniżej wypisane są kanji z proponowanymi "logicznymi" interpretacjami.
+      </div>
+      <div class="link_to_form">
+        Jeśli ktoś chciałby podesłać własną propozycję, zapraszamy do
+        korzystania z
+        <div id="funny_form">
+          <a href="#funny_kanji_propositions_form">formularzu</a>
+        </div>
+        .
       </div>
 
-      <div class="funny_kanji_whole_table">
-        <div class="funny_kanji_box">
-          <dt class="funny_kanji_main_kanji">葉書・はがき</dt>
-          <dd class="funny_kanji_translation">POCZTÓWKA</dd>
-          <dd class="explanation_tip">
-            Któż z nas nie lubi dostawać zapisanych kartek papieru od znajomych
-            z podróży? A gdyby tak zamiast kartek, zapisać (書く) liść (葉) i
-            wysłać go na wietrze? Może trafiłby szybciej niż tradycyjną pocztą
-            ;) .
-          </dd>
+      <!-- START POJEMNIKA LITERA A -->
+      <div class="funny_kanji_letter_box">
+        <div class="funny_kanji_top_letter">A</div>
+      </div>
+
+      <!-- KONIEC POJEMNIKA LITERA A -->
+
+      <!-- START POJEMNIKA LITERA H -->
+      <div class="funny_kanji_letter_box">
+        <div class="funny_kanji_top_letter">H</div>
+
+        <div class="funny_kanji_whole_table">
+          <div class="funny_kanji_box">
+            <dt class="funny_kanji_main_kanji">葉書・はがき</dt>
+            <dd class="funny_kanji_translation">POCZTÓWKA</dd>
+            <dd class="explanation_tip">
+              Któż z nas nie lubi dostawać zapisanych kartek papieru od
+              znajomych z podróży? A gdyby tak zamiast kartek, zapisać
+              (書く・かく) liść (葉・は) i wysłać go na wietrze? Może trafiłby
+              szybciej niż tradycyjną pocztą ;) .
+            </dd>
+          </div>
         </div>
 
+        <!-- KONIEC POJEMNIKA LITERA H -->
         <div class="funny_kanji_box">
           <dt class="funny_kanji_main_kanji">南瓜・かぼちゃ</dt>
           <dd class="funny_kanji_translation">DYNIA</dd>
@@ -73,7 +94,7 @@
 
         <div class="funny_kanji_box">
           <dt class="funny_kanji_main_kanji">身体・しんたい</dt>
-          <dd class="funny_kanji_translation">ciało</dd>
+          <dd class="funny_kanji_translation">CIAŁO</dd>
           <dd class="explanation_tip">obydwa znaki to ciało</dd>
         </div>
 
@@ -88,6 +109,35 @@
           </dd>
         </div>
 
+        <div class="funny_kanji_box">
+          <dt class="funny_kanji_main_kanji">泥棒・どろぼう</dt>
+          <dd class="funny_kanji_translation">ZŁODZIEJ</dd>
+          <dd class="explanation_tip">Błotnisty（泥）kij (棒).</dd>
+        </div>
+
+        <div class="funny_kanji_box">
+          <dt class="funny_kanji_main_kanji">集中・しゅうちゅ</dt>
+          <dd class="funny_kanji_translation">
+            KONCENTRACJA / SKUPIENIE / INTEGRACJA
+          </dd>
+          <dd class="explanation_tip">Zebranie się (集まる) wewntąrz (中).</dd>
+        </div>
+
+        <div class="funny_kanji_box">
+          <dt class="funny_kanji_main_kanji">無事・ぶじ</dt>
+          <dd class="funny_kanji_translation">
+            BEZPIECZEŃSTWO / SPOKÓJ / CISZA
+          </dd>
+          <dd class="explanation_tip">Miejsce bez (無くして) rzeczy (事)</dd>
+        </div>
+
+        <div class="funny_kanji_box">
+          <dt class="funny_kanji_main_kanji">安全・あんぜん</dt>
+          <dd class="funny_kanji_translation">
+            BEZPIECZEŃSTWO / ZABEZPIECZENIE / GWARANCJA
+          </dd>
+          <dd class="explanation_tip">Wszystko () jest spokojne ().</dd>
+        </div>
         <!-- TEMPLATE FUNNY KANJI BOX
 
       <div class="funny_kanji_box">
@@ -104,8 +154,8 @@
         </div> -->
       </div>
 
-      <div class="funny_kanji_propositions_form">
-        <form>
+      <div id="funny_kanji_propositions_form">
+        <form method="POST" action="https://dev.cotenfrontend.pl">
           <fieldset>
             <legend>Dane</legend>
 
@@ -148,14 +198,14 @@
 
             <label for="part_of_speech">Część mowy</label>
             <select name="part_of_speech">
-              <option>(wybierz)</option>
-              <option>Rzeczownik</option>
-              <option>Czasownik</option>
-              <option>Przymiotnik</option>
-              <option>Przysłówek</option>
-              <option>Liczebnik</option>
-              <option>Zaimek</option>
-              <option>Przyimek</option>
+              <option value="default">(wybierz)</option>
+              <option valur="noun">Rzeczownik</option>
+              <option value="verb">Czasownik</option>
+              <option value="adjective">Przymiotnik</option>
+              <option value="adverb">Przysłówek</option>
+              <option value="numeral">Liczebnik</option>
+              <option value="pronoun">Zaimek</option>
+              <option value="preposition">Przyimek</option>
             </select>
 
             <label
@@ -164,7 +214,8 @@
                 placeholder="Tutaj wpisz swoją propozycję"
               ></textarea>
             </label>
-            <label>Proponowana grafika<input name="file" type="file"></label>
+            <label>Proponowana grafika<input name="file" type="file" /></label>
+            <input type="submit" name="submit" value="Wyślij" />
           </fieldset>
         </form>
       </div>
