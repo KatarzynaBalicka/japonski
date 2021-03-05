@@ -11,11 +11,11 @@ body {
   margin: 15px auto;
 }
 
-.funny_kanji_main_kanji {
+.funny_kanji_box__main {
   font-size: 36px;
 }
 
-.funny_kanji_translation {
+.funny_kanji_box__translation {
   font-size: 28px;
 }
 

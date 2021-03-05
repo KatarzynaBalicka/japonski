@@ -4,6 +4,7 @@
   "description": "",
   "main": "jap_main.js",
   "scripts": {
+    "jap_vocabulary_funny_kanji": "npx node-sass scss_files/jap_vocabulary_funny_kanji.scss jap_vocabulary/jap_vocabulary_funny_kanji.css",
     "jap_grammar_particles": "npx node-sass scss_files/jap_grammar_particles.scss jap_grammar/jap_grammar_particles.css",
     "jap_exercise_main": "npx node-sass scss_files/jap_exercise_main.scss jap_exercise/jap_exercise_main.css",
     "jap_grammar_main": "npx node-sass scss_files/jap_grammar_main.scss jap_grammar/jap_grammar_main.css",

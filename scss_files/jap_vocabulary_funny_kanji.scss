@@ -1,9 +1,13 @@
 body {
-  background: linear-gradient(rgba(244, 219, 216, 0.25), rgba(224, 177, 203, 0.25));
+  background: linear-gradient(
+    rgba(244, 219, 216, 0.25),
+    rgba(224, 177, 203, 0.25)
+  );
   background-attachment: fixed;
   margin: 2px 2px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 main {
   height: 100vh;
@@ -12,27 +16,32 @@ main {
   margin-top: 120px;
   padding-bottom: 25px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .navigation {
-  background-color: #ceb2ad;
+  background-color: rgb(206, 178, 173);
   width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
   padding: 5px 0px;
-  display: none; }
-  .navigation_link {
+  display: none;
+  &_link {
     color: #5d4e60;
     text-decoration: none;
     font-size: 24px;
     display: block;
-    margin-left: 30px; }
-    .navigation_link:hover {
-      color: #7261a3; }
+    margin-left: 30px;
+    &:hover {
+      color: #7261a3;
+    }
+  }
+}
 
 .navigation--open {
-  display: block; }
+  display: block;
+}
 
 button {
   position: fixed;
@@ -40,11 +49,12 @@ button {
   right: 15px;
   background-color: rgba(190, 168, 167, 0.75);
   border: transparent;
-  border-radius: 15px; }
-
+  border-radius: 15px;
+}
 .hamburger_icon {
   height: 50px;
-  width: 50px; }
+  width: 50px;
+}
 
 .funny_kanji_title {
   font-size: 32px;
@@ -52,28 +62,34 @@ button {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .funny_kanji_title_hiragana {
+  align-items: center;
+  &_hiragana {
     font-size: 16px;
-    padding: 5px 0px 0px; }
-  .funny_kanji_title_kanji {
+    padding: 5px 0px 0px;
+  }
+  &_kanji {
     font-size: 34px;
-    padding: 0px 0px 10px; }
+    padding: 0px 0px 10px;
+  }
+}
 
 .funny_kanji_box__explanation_tip,
 .funny_kanji_box__translation {
   margin-left: 20px;
-  line-height: 1.7; }
+  line-height: 1.7;
+}
 
 .link_to_form {
-  display: inline-block; }
+  display: inline-block;
+}
 
 #funny_form {
-  display: inline-block; }
+  display: inline-block;
+}
 
 @media screen and (min-width: 449px) {
   .navigation {
-    background-color: #c09891;
+    background-color: rgba(192, 152, 145, 1);
     width: 75vw;
     display: flex;
     flex-wrap: wrap;
@@ -84,12 +100,17 @@ button {
     margin: 0px auto;
     border-radius: 25px;
     padding: 5px 0px;
-    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5); }
-    .navigation_link {
+    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+    &_link {
       font-size: 28px;
-      margin: auto; }
+      margin: auto;
+    }
+  }
+
   button {
-    display: none; }
+    display: none;
+  }
+
   main {
     height: 100%;
     color: #2a0800;
@@ -99,23 +120,36 @@ button {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
-    font-size: 16px; }
+    font-size: 16px;
+  }
+
   .funny_kanji_whole_table {
-    margin: 30px 30px; }
+    margin: 30px 30px;
+  }
   .page_description {
-    margin: 30px 30px; }
+    margin: 30px 30px;
+  }
+
   .funny_kanji_letter_box,
   .funny_kanji_box {
     width: 90%;
-    margin: 15px auto; } }
+    margin: 15px auto;
+  }
+}
 
 @media screen and (min-width: 799px) {
   main {
-    font-size: 21px; } }
+    font-size: 21px;
+  }
+}
 
 @media screen and (min-width: 1439px) {
   main {
     width: 50vw;
-    font-size: 21px; }
+    font-size: 21px;
+  }
+
   .navigation {
-    width: 50vw; } }
+    width: 50vw;
+  }
+}
