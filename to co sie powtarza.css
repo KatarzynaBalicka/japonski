@@ -1,0 +1,151 @@
+/* GŁÓWNE BODY DOSTOSOWANE DO WYMOGÓW SASS*/
+
+/* COPY_jap_exercise_main */
+/* COPY_jap_grammar_main */
+/* COPY_jap_grammar_particles */
+/* COPY_jap_vocabulary_funny_kanji */
+/* COPY_jap_vocabulary_sorted_colors */
+/* COPY_jap_vocabulary_sorted_parts_of_body */
+/* COPY_jap_vocabulary_homonyms */
+/* COPY_jap_vocabulary_idioms */
+/* COPY_jap_vocabulary_main_styles */
+/* COPY_jap_vocabulary_similar_looking */
+/* COPY_jap_vocabulary_sorted */
+/* COPY_jap_vocabulary_styles */
+/* COPY_jap_main_styles */
+
+body {
+  background: linear-gradient(
+    rgba(244, 219, 216, 0.25),
+    rgba(224, 177, 203, 0.25)
+  );
+  background-attachment: fixed;
+  margin: 2px 2px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+  color: #2a0800;
+  width: 95vw;
+  margin-top: 120px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  background-color: rgb(206, 178, 173);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 5px 0px;
+  display: none;
+  &_link {
+    color: #5d4e60;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    margin-left: 30px;
+    &:hover {
+      color: #7261a3;
+    }
+  }
+}
+
+.navigation--open {
+  display: block;
+}
+
+button {
+  position: fixed;
+  top: 23px;
+  right: 15px;
+  background-color: rgba(190, 168, 167, 0.75);
+  border: transparent;
+  border-radius: 15px;
+}
+.hamburger_icon {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (min-width: 449px) {
+  .navigation {
+    background-color: rgba(192, 152, 145, 1);
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 15px;
+    left: auto;
+    margin: 0px auto;
+    border-radius: 25px;
+    padding: 5px 0px;
+    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+    &_link {
+      font-size: 28px;
+      margin: auto;
+    }
+  }
+
+  button {
+    display: none;
+  }
+
+  main {
+    height: 100%;
+    color: #2a0800;
+    width: 75vw;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  main {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw;
+    font-size: 21px;
+  }
+
+  .navigation {
+    width: 50vw;
+  }
+}
+
+
+/* GŁÓWNY TYTUŁ STRONY Z HIRAGANĄ I KANJI */
+/* zamiast "vocabulary" dana podstona */
+
+
+.vocabulary_main_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vocabulary_main_title_hiragana {
+  font-size: 16px;
+  padding: 5px 0px 0px;
+}
+
+.vocabulary_main_title_kanji {
+  font-size: 34px;
+  padding: 0px 0px 10px;
+}

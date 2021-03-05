@@ -1,0 +1,24 @@
+{
+  "name": "japonski",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jap_main.js",
+  "scripts": {
+    "jap_exercise_main": "npx node-sass scss_files/jap_exercise_main.scss jap_exercise/jap_exercise_main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatarzynaBalicka/japonski.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatarzynaBalicka/japonski/issues"
+  },
+  "homepage": "https://github.com/KatarzynaBalicka/japonski#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
