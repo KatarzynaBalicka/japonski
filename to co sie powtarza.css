@@ -13,8 +13,7 @@
 /* COPY_jap_vocabulary_sorted */
 /* COPY_jap_vocabulary_styles */
 /* COPY_jap_main_styles */
-
-body {
+@mixin bodyGeneral {
   background: linear-gradient(
     rgba(244, 219, 216, 0.25),
     rgba(224, 177, 203, 0.25)
@@ -25,17 +24,29 @@ body {
   justify-content: center;
 }
 
-main {
-  height: 100vh;
+@mixin mainGeneral {
+  // height: 100vh;
   color: #2a0800;
   width: 95vw;
   margin-top: 120px;
+  margin-bottom: 40px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
 }
 
-.navigation {
+@mixin mainMin449 {
+  height: 100%;
+  color: #2a0800;
+  width: 75vw;
+  margin-top: 120px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
+  font-size: 16px;
+}
+
+@mixin navigationSmall {
   background-color: rgb(206, 178, 173);
   width: 100%;
   position: fixed;
@@ -55,11 +66,25 @@ main {
   }
 }
 
-.navigation--open {
-  display: block;
+@mixin navigationBig {
+  background-color: rgba(192, 152, 145, 1);
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: fixed;
+  left: auto;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 0px;
+  box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+  outline: 2px solid pink;
+  &_link {
+    font-size: 28px;
+    margin: auto;
+  }
 }
 
-button {
+@mixin buttonSmall {
   position: fixed;
   top: 23px;
   right: 15px;
@@ -67,69 +92,56 @@ button {
   border: transparent;
   border-radius: 15px;
 }
-.hamburger_icon {
+
+@mixin hamburgerIcon {
   height: 50px;
   width: 50px;
 }
 
-@media screen and (min-width: 449px) {
-  .navigation {
-    background-color: rgba(192, 152, 145, 1);
-    width: 75vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 15px;
-    left: auto;
-    margin: 0px auto;
-    border-radius: 25px;
-    padding: 5px 0px;
-    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
-    &_link {
-      font-size: 28px;
-      margin: auto;
-    }
-  }
-
-  button {
-    display: none;
-  }
-
-  main {
-    height: 100%;
-    color: #2a0800;
-    width: 75vw;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
-    font-size: 16px;
-  }
+body {
+  @include bodyGeneral;
 }
 
-@media screen and (min-width: 799px) {
+main {
+  @include mainGeneral;
+}
+
+.navigation {
+  @include navigationSmall;
+}
+
+.navigation--open {
+  display: block;
+}
+
+button {
+  @include buttonSmall;
+}
+.navigation--open {
+  display: block;
+}
+.hamburger_icon {
+  @include hamburgerIcon;
+}
+
+@mixin mediaMin799 {
   main {
     font-size: 21px;
+    margin-top: 70px;
   }
 }
-
-@media screen and (min-width: 1439px) {
+@mixin mediaMin1439 {
   main {
     width: 50vw;
-    font-size: 21px;
   }
 
   .navigation {
     width: 50vw;
   }
 }
-
 
 /* GŁÓWNY TYTUŁ STRONY Z HIRAGANĄ I KANJI */
 /* zamiast "vocabulary" dana podstona */
-
 
 .vocabulary_main_title {
   font-size: 32px;
