@@ -175,7 +175,7 @@ button {
   height: 2em;
 }
 
-/* TABLET ADJUSTMENTS FOR SIMILIAR LOOKING */
+/* TABLET ADJUSTMENTS FOR similar LOOKING */
 
 @media screen and (min-width: 450px) {
   .navigation_top {
