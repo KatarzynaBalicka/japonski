@@ -1,4 +1,4 @@
-body {
+@mixin bodyGeneral {
   background: linear-gradient(
     rgba(244, 219, 216, 0.25),
     rgba(224, 177, 203, 0.25)
@@ -9,17 +9,29 @@ body {
   justify-content: center;
 }
 
-main {
-  height: 100vh;
+@mixin mainGeneral {
+  // height: 100vh;
   color: #2a0800;
   width: 95vw;
   margin-top: 120px;
+  margin-bottom: 40px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
 }
 
-.navigation {
+@mixin mainMin449 {
+  height: 100%;
+  color: #2a0800;
+  width: 75vw;
+  margin-top: 120px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
+  font-size: 16px;
+}
+
+@mixin navigationSmall {
   background-color: rgb(206, 178, 173);
   width: 100%;
   position: fixed;
@@ -37,23 +49,72 @@ main {
       color: #7261a3;
     }
   }
+  &_hamburger {
+    position: fixed;
+    top: 23px;
+    right: 15px;
+    background-color: rgba(190, 168, 167, 0.75);
+    border: transparent;
+    border-radius: 15px;
+    z-index: 6;
+    &_icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  &.navigation--open {
+    display: block;
+  }
 }
 
-.navigation--open {
-  display: block;
-}
-
-button {
+@mixin navigationBig {
+  background-color: rgba(192, 152, 145, 1);
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   position: fixed;
-  top: 23px;
-  right: 15px;
-  background-color: rgba(190, 168, 167, 0.75);
-  border: transparent;
-  border-radius: 15px;
+  left: auto;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 0px;
+  box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+  outline: 2px solid pink;
+  &_link {
+    font-size: 28px;
+    margin: auto;
+  }
+  &_hamburger {
+    display: none;
+  }
 }
-.hamburger_icon {
-  height: 50px;
-  width: 50px;
+
+body {
+  @include bodyGeneral;
+}
+
+main {
+  @include mainGeneral;
+}
+
+.navigation {
+  @include navigationSmall;
+  z-index: 5;
+}
+
+@mixin mediaMin799 {
+  main {
+    font-size: 21px;
+    margin-top: 70px;
+  }
+}
+@mixin mediaMin1439 {
+  main {
+    width: 50vw;
+  }
+
+  .navigation {
+    width: 50vw;
+  }
 }
 
 .grammar_particles_title {
@@ -109,80 +170,52 @@ button {
 }
 
 .particles_box_he {
-    order: 7;
-  }
+  order: 7;
+}
 
 .particles_box_ga {
-    order: 1;
-  }
+  order: 1;
+}
 
 .particles_box_wo {
-    order: 3;
-  }
+  order: 3;
+}
 
 .particles_box_to {
-    order: 9;
-  }
+  order: 9;
+}
 
 .particles_box_ni {
-    order: 6;
-  }
+  order: 6;
+}
 
 .particles_box_de {
-    order: 5;
-  }
+  order: 5;
+}
 
 .particles_box_no {
-    order: 4;
-  }
+  order: 4;
+}
 
 .particles_box_mo {
-    order: 10;
-  }
+  order: 10;
+}
 
 .particles_box_kara {
-    order: 11;
-  }
+  order: 11;
+}
 
 .particles_box_made {
-    order: 12;
-  }
-
+  order: 12;
+}
 
 @media screen and (min-width: 449px) {
   .navigation {
-    background-color: rgba(192, 152, 145, 1);
-    width: 75vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 15px;
-    left: auto;
-    margin: 0px auto;
-    border-radius: 25px;
-    padding: 5px 0px;
-    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
-    &_link {
-      font-size: 28px;
-      margin: auto;
-    }
-  }
-
-  button {
-    display: none;
+    @include navigationBig;
   }
 
   main {
-    height: 100%;
-    color: #2a0800;
-    width: 75vw;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
-    font-size: 16px;
+    @include mainMin449;
   }
 
   .particles_box {
@@ -200,20 +233,9 @@ button {
 }
 
 @media screen and (min-width: 799px) {
-  main {
-    font-size: 21px;
-  }
-  .particles_box_bulletpoint {
-    font-size: 21px;
-  }
+  @include mediaMin799;
 }
 
 @media screen and (min-width: 1439px) {
-  .navigation {
-    width: 50vw;
-  }
-  main {
-    width: 50vw;
-    font-size: 21px;
-  }
+  @include mediaMin1439;
 }

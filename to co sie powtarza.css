@@ -25,7 +25,6 @@
 }
 
 @mixin mainGeneral {
-  // height: 100vh;
   color: #2a0800;
   width: 95vw;
   margin-top: 120px;
@@ -54,6 +53,7 @@
   left: 0px;
   padding: 5px 0px;
   display: none;
+  z-index: 5;
   &_link {
     color: #5d4e60;
     text-decoration: none;
@@ -63,6 +63,22 @@
     &:hover {
       color: #7261a3;
     }
+  }
+  &_hamburger {
+    position: fixed;
+    top: 23px;
+    right: 15px;
+    background-color: rgba(190, 168, 167, 0.75);
+    border: transparent;
+    border-radius: 15px;
+    z-index: 6;
+    &_icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  &.navigation--open {
+    display: block;
   }
 }
 
@@ -82,20 +98,9 @@
     font-size: 28px;
     margin: auto;
   }
-}
-
-@mixin buttonSmall {
-  position: fixed;
-  top: 23px;
-  right: 15px;
-  background-color: rgba(190, 168, 167, 0.75);
-  border: transparent;
-  border-radius: 15px;
-}
-
-@mixin hamburgerIcon {
-  height: 50px;
-  width: 50px;
+  &_hamburger{
+    display: none;
+  }
 }
 
 body {
@@ -108,20 +113,6 @@ main {
 
 .navigation {
   @include navigationSmall;
-}
-
-.navigation--open {
-  display: block;
-}
-
-button {
-  @include buttonSmall;
-}
-.navigation--open {
-  display: block;
-}
-.hamburger_icon {
-  @include hamburgerIcon;
 }
 
 @mixin mediaMin799 {
@@ -138,6 +129,25 @@ button {
   .navigation {
     width: 50vw;
   }
+}
+
+@media screen and (min-width: 449px) {
+  .navigation {
+    @include navigationBig;
+  }
+  
+  main {
+    @include mainMin449;
+  }
+}
+
+
+@media screen and (min-width: 799px) {
+  @include mediaMin799;
+}
+
+@media screen and (min-width: 1439px) {
+  @include mediaMin1439;
 }
 
 /* GŁÓWNY TYTUŁ STRONY Z HIRAGANĄ I KANJI */

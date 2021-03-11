@@ -120,7 +120,7 @@ main {
     margin-top: 12px;
     margin-bottom: 5px;
     top: 42px;
-    background: linear-gradient(90deg, #e9b9d5 70%, rgba(255, 192, 203, 0) 100%); }
+    background: linear-gradient(90deg, #e9b9d5 70%, white 100%); }
     .funny_kanji_letter_box__title::before {
       content: "";
       width: 30px; }
