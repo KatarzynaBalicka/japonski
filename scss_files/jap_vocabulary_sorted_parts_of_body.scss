@@ -1,0 +1,267 @@
+@mixin bodyGeneral {
+  background: linear-gradient(
+    rgba(244, 219, 216, 0.25),
+    rgba(224, 177, 203, 0.25)
+  );
+  background-attachment: fixed;
+  margin: 2px 2px;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin mainGeneral {
+  color: #2a0800;
+  width: 95vw;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin mainMin449 {
+  height: 100%;
+  color: #2a0800;
+  width: 75vw;
+  margin-top: 120px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
+  font-size: 16px;
+}
+
+@mixin navigationSmall {
+  background-color: rgb(206, 178, 173);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 5px 0px;
+  display: none;
+  &_link {
+    color: #5d4e60;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    margin-left: 30px;
+    &:hover {
+      color: #7261a3;
+    }
+  }
+  &_hamburger {
+    position: fixed;
+    top: 23px;
+    right: 15px;
+    background-color: rgba(190, 168, 167, 0.75);
+    border: transparent;
+    border-radius: 15px;
+    z-index: 6;
+    &_icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  &.navigation--open {
+    display: block;
+  }
+}
+
+@mixin navigationBig {
+  background-color: rgba(192, 152, 145, 1);
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: fixed;
+  left: auto;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 0px;
+  box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+  &_link {
+    font-size: 28px;
+    margin: auto;
+  }
+  &_hamburger {
+    display: none;
+  }
+}
+
+body {
+  @include bodyGeneral;
+}
+
+main {
+  @include mainGeneral;
+}
+
+.navigation {
+  @include navigationSmall;
+  z-index: 5;
+}
+
+@mixin mediaMin799 {
+  main {
+    font-size: 21px;
+    margin-top: 70px;
+  }
+}
+@mixin mediaMin1439 {
+  main {
+    width: 50vw;
+  }
+
+  .navigation {
+    width: 50vw;
+  }
+}
+
+.vocabulary_sorted_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_hiragana {
+    font-size: 16px;
+    padding: 5px 0px 0px;
+  }
+  &_kanji {
+    font-size: 34px;
+    padding: 0px 0px 10px;
+  }
+}
+
+.parts_of_body_whole_table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.learning_tip {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 40px;
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__head,
+  &__body {
+    margin: 0px auto;
+  }
+}
+
+.parts_of_body_row {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 80px 80px;
+  grid-template-areas:
+    "hiragana translation"
+    "kanji translation";
+  margin: auto;
+  border-bottom: 4px solid;
+  border-image-source: linear-gradient(
+    60deg,
+    rgba(255, 192, 203, 0),
+    rgb(233, 185, 213) 5%,
+    rgba(255, 192, 203, 0) 75%
+  );
+  border-image-slice: 1;
+  padding: 0px 10px;
+  margin-bottom: 40px;
+  &__translation {
+    grid-area: translation;
+    font-size: 18px;
+    align-self: center;
+    justify-self: start;
+  }
+  &__hiragana {
+    grid-area: hiragana;
+    font-size: 12px;
+  }
+  &__kanji {
+    grid-area: kanji;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__annotation {
+    color: #5d4e60;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 449px) {
+  .navigation {
+    @include navigationBig;
+  }
+
+  main {
+    @include mainMin449;
+  }
+
+  .learning_tip {
+    margin: 0px 10px 40px;
+  }
+
+  .parts_of_body_row {
+    grid-template-columns: 100px 100px;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  @include mediaMin799;
+  .parts_of_body_row__translation {
+    font-size: 21px;
+  }
+
+  .parts_of_body_row__hiragana {
+    font-size: 14px;
+  }
+
+  .parts_of_body_row__kanji {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .learning_tip {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: [head] 1fr [body] 1fr;
+    column-gap: 20px;
+    &__title {
+      margin-bottom: 10px;
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+      place-self: center;
+    }
+    &__head {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+    }
+    &__body {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+    }
+  }
+
+  .learning_tip__head,
+  .learning_tip__body {
+    padding: 0px 20px;
+    border-bottom: 4px solid;
+    border-image-source: linear-gradient(
+      60deg,
+      rgba(255, 192, 203, 0),
+      rgb(233, 185, 213) 5%,
+      rgba(255, 192, 203, 0) 95%
+    );
+    border-image-slice: 1;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  @include mediaMin1439;
+}
