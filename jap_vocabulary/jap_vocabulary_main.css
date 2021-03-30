@@ -45,37 +45,19 @@ main {
   .navigation.navigation--open {
     display: block; }
 
-.vocabulary_main_title {
+.site_title {
   font-size: 32px;
   font-weight: bold;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .vocabulary_main_title_hiragana {
+  .site_title_hiragana {
     font-size: 16px;
     padding: 5px 0px 0px; }
-  .vocabulary_main_title_kanji {
+  .site_title_kanji {
     font-size: 34px;
     padding: 0px 0px 10px; }
-
-.vocabulary_folder {
-  margin: 30px 20px; }
-  .vocabulary_folder_topic_link {
-    color: #5c5db8;
-    text-decoration: none; }
-  .vocabulary_folder dt {
-    font-size: 24px;
-    font-weight: bold; }
-  .vocabulary_folder_topic_kanji {
-    padding: 0px 0px 20px; }
-  .vocabulary_folder_topic_hiragana {
-    font-size: 12px;
-    padding: 5px 0px 0px; }
-  .vocabulary_folder dd {
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word; }
 
 @media screen and (min-width: 449px) {
   .navigation {
@@ -103,13 +85,7 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
-    font-size: 16px; }
-  dl {
-    margin: 30px 30px; }
-  dd {
-    line-height: 1.7;
-    text-align: justify;
-    text-justify: inter-word; } }
+    font-size: 16px; } }
 
 @media screen and (min-width: 799px) {
   main {
@@ -121,3 +97,29 @@ main {
     width: 50vw; }
   .navigation {
     width: 50vw; } }
+
+.vocabulary_folder {
+  margin: 30px 20px; }
+  .vocabulary_folder_topic_link {
+    color: #5c5db8;
+    text-decoration: none; }
+  .vocabulary_folder dt {
+    font-size: 24px;
+    font-weight: bold; }
+  .vocabulary_folder_topic_kanji {
+    padding: 0px 0px 20px; }
+  .vocabulary_folder_topic_hiragana {
+    font-size: 12px;
+    padding: 5px 0px 0px; }
+  .vocabulary_folder dd {
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word; }
+
+@media screen and (min-width: 449px) {
+  dl {
+    margin: 30px 30px; }
+  dd {
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word; } }

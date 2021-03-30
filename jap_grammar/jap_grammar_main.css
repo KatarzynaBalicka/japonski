@@ -45,30 +45,19 @@ main {
   .navigation.navigation--open {
     display: block; }
 
-.grammar_title {
+.site_title {
   font-size: 32px;
   font-weight: bold;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .grammar_title_hiragana {
+  .site_title_hiragana {
     font-size: 16px;
     padding: 5px 0px 0px; }
-  .grammar_title_kanji {
+  .site_title_kanji {
     font-size: 34px;
     padding: 0px 0px 10px; }
-
-.grammar_topics {
-  display: flex;
-  flex-direction: column; }
-  .grammar_topics_link {
-    color: #5c5db8;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px auto;
-    text-align: center; }
 
 @media screen and (min-width: 449px) {
   .navigation {
@@ -101,7 +90,26 @@ main {
 @media screen and (min-width: 799px) {
   main {
     font-size: 21px;
-    margin-top: 70px; }
+    margin-top: 70px; } }
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw; }
+  .navigation {
+    width: 50vw; } }
+
+.grammar_topics {
+  display: flex;
+  flex-direction: column; }
+  .grammar_topics_link {
+    color: #5c5db8;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px auto;
+    text-align: center; }
+
+@media screen and (min-width: 799px) {
   .grammar_topics {
     margin: 5px auto;
     width: 95%;
@@ -115,9 +123,3 @@ main {
     content: attr(data-tooltip);
     position: absolute;
     top: 25px; } }
-
-@media screen and (min-width: 1439px) {
-  main {
-    width: 50vw; }
-  .navigation {
-    width: 50vw; } }

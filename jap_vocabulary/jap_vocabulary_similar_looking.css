@@ -45,19 +45,58 @@ main {
   .navigation.navigation--open {
     display: block; }
 
-.similar_looking_title {
+.site_title {
   font-size: 32px;
   font-weight: bold;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .similar_looking_title_hiragana {
+  .site_title_hiragana {
     font-size: 16px;
     padding: 5px 0px 0px; }
-  .similar_looking_title_kanji {
+  .site_title_kanji {
     font-size: 34px;
     padding: 0px 0px 10px; }
+
+@media screen and (min-width: 449px) {
+  .navigation {
+    background-color: #c09891;
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    left: auto;
+    margin: 0px 0px 10px 0px;
+    padding: 5px 0px;
+    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+    outline: 2px solid pink; }
+    .navigation_link {
+      font-size: 28px;
+      margin: auto; }
+    .navigation_hamburger {
+      display: none; }
+  main {
+    height: 100%;
+    color: #2a0800;
+    width: 75vw;
+    margin-top: 120px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
+    font-size: 16px; } }
+
+@media screen and (min-width: 799px) {
+  main {
+    font-size: 21px;
+    margin-top: 70px; } }
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw; }
+  .navigation {
+    width: 50vw; } }
 
 .similar_looking_row {
   background: linear-gradient(90deg, rgba(245, 245, 245, 0), white 25%, white 75%, rgba(255, 255, 255, 0));
@@ -102,31 +141,6 @@ main {
   display: none; }
 
 @media screen and (min-width: 449px) {
-  .navigation {
-    background-color: #c09891;
-    width: 75vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: fixed;
-    left: auto;
-    margin: 0px 0px 10px 0px;
-    padding: 5px 0px;
-    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5); }
-    .navigation_link {
-      font-size: 28px;
-      margin: auto; }
-    .navigation_hamburger {
-      display: none; }
-  main {
-    height: 100%;
-    color: #2a0800;
-    width: 75vw;
-    margin-top: 120px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
-    font-size: 16px; }
   .similiar_looking_row {
     width: 90%;
     display: grid;
@@ -154,16 +168,7 @@ main {
     margin-bottom: 15px; } }
 
 @media screen and (min-width: 799px) {
-  main {
-    font-size: 21px;
-    margin-top: 70px; }
   .translation {
     font-size: 21px; }
   .kanji {
     font-size: 26px; } }
-
-@media screen and (min-width: 1439px) {
-  main {
-    width: 50vw; }
-  .navigation {
-    width: 50vw; } }

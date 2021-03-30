@@ -45,19 +45,58 @@ main {
   .navigation.navigation--open {
     display: block; }
 
-.vocabulary_sorted_title {
+.site_title {
   font-size: 32px;
   font-weight: bold;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .vocabulary_sorted_title_hiragana {
+  .site_title_hiragana {
     font-size: 16px;
     padding: 5px 0px 0px; }
-  .vocabulary_sorted_title_kanji {
+  .site_title_kanji {
     font-size: 34px;
     padding: 0px 0px 10px; }
+
+@media screen and (min-width: 449px) {
+  .navigation {
+    background-color: #c09891;
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    left: auto;
+    margin: 0px 0px 10px 0px;
+    padding: 5px 0px;
+    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5);
+    outline: 2px solid pink; }
+    .navigation_link {
+      font-size: 28px;
+      margin: auto; }
+    .navigation_hamburger {
+      display: none; }
+  main {
+    height: 100%;
+    color: #2a0800;
+    width: 75vw;
+    margin-top: 120px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
+    font-size: 16px; } }
+
+@media screen and (min-width: 799px) {
+  main {
+    font-size: 21px;
+    margin-top: 70px; } }
+
+@media screen and (min-width: 1439px) {
+  main {
+    width: 50vw; }
+  .navigation {
+    width: 50vw; } }
 
 .parts_of_body_whole_table {
   display: flex;
@@ -104,40 +143,12 @@ main {
     text-decoration: none; }
 
 @media screen and (min-width: 449px) {
-  .navigation {
-    background-color: #c09891;
-    width: 75vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: fixed;
-    left: auto;
-    margin: 0px 0px 10px 0px;
-    padding: 5px 0px;
-    box-shadow: 0 0 5px rgba(62, 25, 41, 0.5); }
-    .navigation_link {
-      font-size: 28px;
-      margin: auto; }
-    .navigation_hamburger {
-      display: none; }
-  main {
-    height: 100%;
-    color: #2a0800;
-    width: 75vw;
-    margin-top: 120px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(62, 25, 41, 0.25);
-    font-size: 16px; }
   .learning_tip {
     margin: 0px 10px 40px; }
   .parts_of_body_row {
     grid-template-columns: 100px 100px; } }
 
 @media screen and (min-width: 799px) {
-  main {
-    font-size: 21px;
-    margin-top: 70px; }
   .parts_of_body_row__translation {
     font-size: 21px; }
   .parts_of_body_row__hiragana {
@@ -168,9 +179,3 @@ main {
     border-bottom: 4px solid;
     border-image-source: linear-gradient(60deg, rgba(255, 192, 203, 0), #e9b9d5 5%, rgba(255, 192, 203, 0) 95%);
     border-image-slice: 1; } }
-
-@media screen and (min-width: 1439px) {
-  main {
-    width: 50vw; }
-  .navigation {
-    width: 50vw; } }
