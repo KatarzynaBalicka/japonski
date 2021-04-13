@@ -4,6 +4,7 @@
   "description": "",
   "main": "jap_main.js",
   "scripts": {
+    "jap_vocabulary_sorted_fields_of_study": "npx node-sass -w scss_files/jap_vocabulary_sorted_fields_of_study.scss jap_vocabulary/jap_vobaculary_sorted_categories/jap_vocabulary_sorted_fields_of_study.css",
     "jap_grammar_verbs_conjugation": "npx node-sass -w scss_files/jap_grammar_verbs_conjugation.scss jap_grammar/jap_grammar_verbs_conjugation.css",
     "jap_vocabulary_sorted": "npx node-sass -w scss_files/jap_vocabulary_sorted.scss jap_vocabulary/jap_vocabulary_sorted.css",
     "jap_vocabulary_sorted_parts_of_body": "npx node-sass -w scss_files/jap_vocabulary_sorted_parts_of_body.scss jap_vocabulary/jap_vobaculary_sorted_categories/jap_vocabulary_sorted_parts_of_body.css",
@@ -33,3 +34,4 @@
     "node-sass": "^5.0.0"
   }
 }
+ 

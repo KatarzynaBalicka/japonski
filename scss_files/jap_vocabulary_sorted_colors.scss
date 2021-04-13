@@ -1,6 +1,6 @@
 @import "JAP_BASIC_FORMAT.scss";
 
-.colors_basic_row {
+.vocabulary_sorted_row {
   width: 95%;
   display: grid;
   grid-template-rows: auto;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (min-width: 449px) {
-  .colors_basic_row {
+  .vocabulary_sorted_row {
     grid-template-columns: [sample] 1fr [japanese] 1fr [polish] 1fr;
     width: 90%;
     margin: auto;
@@ -124,11 +124,11 @@
 }
 
 @media screen and (min-width: 1023px) {
-  .colors_basic_row {
+  .vocabulary_sorted_row {
     grid-template-columns: [sample] 1fr [japanese] 2fr [polish] 2fr;
   }
 
-  .colors_basic_row__sample {
+  .vocabulary_sorted_row__sample {
     grid-area: sample;
     height: 100px;
     width: 100px;
@@ -150,7 +150,7 @@
 }
 
 @media screen and (min-width: 1439px) {
-  .colors_basic_row {
+  .vocabulary_sorted_row {
     width: 90%;
     margin: 0px auto;
   }
